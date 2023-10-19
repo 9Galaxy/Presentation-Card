@@ -21,16 +21,107 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--body-background);
+  height: 100vh;
+
+  /* Colors */
+  --_white: var(--white, var(--main-color)); /* Declaring a private propertie */
+  color: var(--_white);
 }
 
+.box {
+  background-color: var(--card-background);
+  height: 28.2rem;
+}
+
+/* Box-1 */
 .box-1 {
-  border: 5px solid red;
+  width: 36%;
+}
+
+header {
+  width: 68%;
+  margin: 1.6rem auto 1rem auto;
+  font-size: 1.2em;
+}
+
+header span {
+  color: var(--span-color);
+}
+
+.content {
+  width: 68%;
+  margin: 30px auto 45px auto;
+}
+
+.content p {
+  width: 88%;
+}
+
+.statdistics {
+  margin: 0 auto 28px auto;
+  width: 70%;
+
+  /* Flexbox */
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.title-statdistics {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px auto 8px auto;
+  /* Colors */
+  --_white: var(--white, var(--main-color)); /* Declaring a private propertie */
+  color: var(--_white);
+}
+.title-stats-1 {
+  text-transform: none;
+}
+
+.content-statdistics {
+  text-transform: uppercase;
+  /* Colors */
+  --_white: var(
+    --white,
+    var(--stats-color)
+  ); /* Declaring a private propertie */
+  color: var(--_white);
+}
+
+.s-box {
+}
+
+.attribution {
+  margin: 0 auto;
   width: 50%;
 }
-.box-2 {
-  border: 5px solid cyan;
+.attribution p {
+  width: 80%;
 }
 
-body {
-  /* background-color: var(--body-background); */
+.attribution a {
+  text-decoration: none;
+  color: var(--span-color);
+  font-weight: 600;
 }
+/* END - Box-1 */
+
+/* Box-2 */
+.box-2 {
+  width: 30%;
+
+  background-image: url(images/image-header-desktop.jpg);
+  background-color: var(--span-color);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.box-2 img {
+  width: 100%;
+  height: 100%;
+}
+/* END - Box-2 */
